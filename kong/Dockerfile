@@ -14,5 +14,6 @@ ADD plugins/oidc /usr/local/share/lua/5.1/kong/plugins/oidc
 RUN luarocks install lua-resty-http
 RUN luarocks install lua-resty-session
 RUN luarocks install lua-resty-jwt 0.2.2
+RUN luarocks install kong-path-allow
 
 USER kong
